@@ -1,0 +1,14 @@
+name: Python program
+
+on: 
+ workflow_dispatch
+
+jobs:
+  runs_the_python_program:
+    runs-on: self-hosted
+    steps:
+     -name: checkout content
+       uses: actions/checkout@v2
+
+     -name: setup python
+       uses: actions/setup-python@v2
